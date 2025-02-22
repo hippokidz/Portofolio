@@ -114,10 +114,10 @@ section{
     width: 32.8rem;
 }
 .text-animation h2 {
-    font-size: 4.5rem; /* Ukuran teks diperbesar */
-    font-weight: 800; /* Tebalkan font */
+    font-size: 6rem; /* Ukuran teks lebih besar */
+    font-weight: 900; /* Lebih tebal agar lebih jelas */
     color: transparent;
-    -webkit-text-stroke: 1px #ff00ee; /* Outline lebih tegas */
+    -webkit-text-stroke: 1.5px #ff00ee; /* Outline lebih tebal */
     background: linear-gradient(90deg, #ff00ee, #ff00ee 50%, transparent 50%);
     background-size: 200% 100%;
     background-clip: text;
@@ -126,6 +126,7 @@ section{
     animation-delay: 2s, 1.2s;
     white-space: nowrap;
     display: inline-block;
+    letter-spacing: 2px; /* Menambah jarak antar huruf */
 }
 
 @keyframes textSlide {
