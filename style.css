@@ -114,8 +114,8 @@ section{
     width: 32.8rem;
 }
 .text-animation h2{
-    font-size: 2.2rem;
-    font-weight: 700;
+    font-size: 3.2rem;
+    font-weight: 400;
     color: transparent;
     -webkit-text-stroke: .7px #ff00ee;
     background: linear-gradient(#ff00ee,#ff00ee);
