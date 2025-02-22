@@ -70,13 +70,13 @@ html{
     animation: TopSlide 1s ease forwards;
     animation-delay: calc(.2s * var(--vlr));
 }
-@keyframes TopSlide {
-    from {
+@keyframes  TopSlide{
+    0%{
         transform: translateY(-100px);
         opacity: 0;
     }
-    to {
-        transform: translateY(0);
+    100%{
+        transform: translateY(0px);
         opacity: 1;
     }
 }
@@ -113,28 +113,27 @@ section{
     position: relative;
     width: 32.8rem;
 }
-.text-animation h2 {
-    font-size: 3rem; /* Ukuran teks lebih besar */
-    font-weight: 700; /* Lebih tebal agar lebih jelas */
+.text-animation h2{
+    font-size: 2.4rem;
+    font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 1.5px #ff00ee; /* Outline lebih tebal */
-    background: linear-gradient(90deg, #ff00ee, #ff00ee 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-clip: text;
+    -webkit-text-stroke: .7px #ff00ee;
+    background: linear-gradient(#ff00ee,#ff00ee);
+    background-repeat: no-repeat;
     -webkit-background-clip: text;
-    animation: textSlide 6s linear infinite, TopSlide 1s ease forwards;
-    animation-delay: 2s, 1.2s;
-    white-space: nowrap;
-    display: inline-block;
-    letter-spacing: 2px; /* Menambah jarak antar huruf */
+    background-position: -33rem 0;
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: textSlide 6s linear infinite,
+    TopSlide 1s ease forwards;
+    animation-delay: 2s,1.2s;
 }
-
-@keyframes textSlide {
-    0% {
-        background-position: 200% 0;
+@keyframes textSlide{
+    0%,10%,100%{
+        background-position: -33rem 0;
     }
-    100% {
-        background-position: -200% 0;
+    65%,85%{
+        background-position: 0 0;
     }
 }
 .text-animation::before{
