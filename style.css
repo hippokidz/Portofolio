@@ -115,7 +115,7 @@ section{
 }
 .text-animation h2 {
     font-size: 4rem; /* Ukuran teks lebih besar */
-    font-weight: 900; /* Lebih tebal agar lebih jelas */
+    font-weight: 700; /* Lebih tebal agar lebih jelas */
     color: transparent;
     -webkit-text-stroke: 1.5px #ff00ee; /* Outline lebih tebal */
     background: linear-gradient(90deg, #ff00ee, #ff00ee 50%, transparent 50%);
