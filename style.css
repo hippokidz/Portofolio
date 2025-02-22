@@ -114,18 +114,18 @@ section{
     width: 32.8rem;
 }
 .text-animation h2 {
-    font-size: 3.2rem;
-    font-weight: 700;
+    font-size: 4.5rem; /* Ukuran teks diperbesar */
+    font-weight: 800; /* Tebalkan font */
     color: transparent;
-    -webkit-text-stroke: 0.7px #ff00ee;
+    -webkit-text-stroke: 1px #ff00ee; /* Outline lebih tegas */
     background: linear-gradient(90deg, #ff00ee, #ff00ee 50%, transparent 50%);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     animation: textSlide 6s linear infinite, TopSlide 1s ease forwards;
     animation-delay: 2s, 1.2s;
-    white-space: nowrap; /* Hindari teks turun ke bawah */
-    display: inline-block; /* Pastikan tetap inline */
+    white-space: nowrap;
+    display: inline-block;
 }
 
 @keyframes textSlide {
