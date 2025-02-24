@@ -256,6 +256,28 @@ I have interests and talents in Design, Programming, AI, Machine Learning, DeepL
     </script>
     <script src="script.js"></script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Menghapus hash dari URL setelah navigasi
+        document.querySelectorAll("a[href^='#']").forEach(anchor => {
+            anchor.addEventListener("click", function (event) {
+                event.preventDefault(); // Mencegah navigasi default
+
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    // Scroll ke elemen target
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+
+                    // Hapus hash dari URL tanpa reload halaman
+                    history.pushState(null, null, window.location.pathname);
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 
 </html>
