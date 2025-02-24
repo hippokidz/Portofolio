@@ -340,7 +340,22 @@ section.start-animation .title{
         opacity: 1;
     }
 }
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Menambah jarak antara ikon dan teks */
+    font-size: 18px; /* Perbesar teks lokasi */
+    font-weight: bold; /* Buat teks lebih tebal */
+    color: #ffffff; /* Sesuaikan dengan desain */
+}
+
+.location i {
+    font-size: 18px; /* Perbesar ikon */
+}
 .title span{
+    color: #ff00ee;
+}
+.skill-title span{
     color: #ff00ee;
 }
 .about img{
@@ -465,15 +480,21 @@ section.start-animation .column h2{
 .education-content {
     padding-left: 1.9rem;
 }
-.education-content .content{
+
+.education-content .content {
     padding: 1.5rem;
-    border: .2rem solid #ff00ee;
-    background: rgba(255,255,255,.1);
-    border-radius: .5rem;
+    border: 0.2rem solid #ff00ee;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
     margin-bottom: 2rem;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.content::before{
+
+.content::before {
     content: "";
     position: absolute;
     left: -2.8rem;
@@ -483,23 +504,56 @@ section.start-animation .column h2{
     border-radius: 50%;
     background: #ff00ee;
 }
-.content .year{
+
+.content .year {
     font-size: 1.5rem;
     color: #ff00ee;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
-.content .year i{
+
+.content .year i {
     color: #ff00ee;
     font-size: 1.5rem;
-    margin-left: .5rem;
 }
-.content h3{
-    font-size: 1.7rem;
-    letter-spacing: .05rem;
-    margin: .5rem 0;
+
+.content h2,
+.content h3,
+.content .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
-.content p{
+
+.content h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin: 0.5rem 0;
+}
+
+.content .location {
+    font-size: 1.5rem;
+    gap: 0.5rem;
+}
+
+.content .location i,
+.content h3 i {
+    font-size: 1.8rem;
+    color: #ff00ee;
+}
+
+.content p {
     font-size: 1.5rem;
 }
+
 /* skill-content */
 .wrapper{
     width: 100%;
@@ -576,6 +630,15 @@ section.start-animation .skill-box2{
 }
 .bar-3{
     width: 70%;
+}
+.bar-4{
+    width: 90%;
+}
+.bar-5{
+    width: 90%;
+}
+.bar-6{
+    width: 90%;
 }
 /* contact section */
 section form{
