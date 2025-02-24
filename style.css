@@ -644,6 +644,16 @@ section.start-animation .skill-box2{
     width: 90%;
 }
 /* contact section */
+.contact {
+    text-align: center; /* Menengahkan semua teks */
+}
+.contact-subtitle {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 0; /* Lebih rapat */
+    margin-top: 2px;
+    color: white;
+}
 section form{
     max-width: 70rem;
     text-align: center;
